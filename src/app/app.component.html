@@ -1,7 +1,9 @@
 <div class="header">
   <div class="header-message">
     <div class="title">
-      <h1>{{title}}</h1>
+      <nav>
+        <a routerLink="/"><h1>{{title}}</h1></a>
+      </nav>
     </div>
     <div class="message">
       <h2>駆け出しエンジニア歓迎！！</h2>
@@ -10,29 +12,24 @@
   <div class="hedder-botton">
     <!-- ログインしていれば -->
     <!-- <div *ngIf=isLoggedIn> -->
-      <div class="AppPost">
-        <a href="#">アプリ投稿</a>
-      </div>
-      <div class="logout">
-        <a href="#">ログアウト</a>
-      <!-- </div> -->
+      <nav>
+        <a routerLink="/webapp-post">アプリ投稿</a>
+      </nav>
+      <nav>
+        <a routerLink="/log-out">ログアウト</a>
+      </nav>
+      <nav>
+        <a routerLink="/my-page">マイページ</a>
+      </nav>
     <!-- ログインしていなければ -->
     <!-- <div ng-template> -->
-      <!-- <div class="signup">
-        <a href="#">新規登録</a>
-      </div>
-      <div class="login">
-        <a href="#">ログイン</a> -->
-      <!-- </div> -->
-  </div>
-  </div>
+      <nav>
+        <a routerLink="/sign-up">新規登録</a>
+      </nav>
+      <nav>
+        <a routerLink="/log-in">ログイン</a>
+      </nav>
+    <!-- ログインしていなければ -->
+    </div>
 </div>
-
-
-
-<!-- <nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages> -->
