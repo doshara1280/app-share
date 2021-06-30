@@ -9,10 +9,11 @@ import { MyPageEditComponent } from './my-page-edit/my-page-edit.component';
 import { WebappEditComponent } from './webapp-edit/webapp-edit.component';
 import { WebappShowComponent } from './webapp-show/webapp-show.component';
 import { CommentComponent } from './comment/comment.component';
+import { WebappListComponent } from './webapp-list/webapp-list.component';
 
 const routes: Routes = [
   { path: 'webapp-post', component: WebappPostComponent },
-  { path: 'log-out', redirectTo: '/', pathMatch: 'full' },
+  { path: 'log-out', redirectTo: '/webapp-list', pathMatch: 'full' },
   { path: 'my-page', component: MyPageComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'log-in', component: LogInComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'webapp-edit', component: WebappEditComponent },
   { path: 'webapp-show', component: WebappShowComponent },
   { path: 'comment', component: CommentComponent },
-  // { path: 'log-out', component: LogOutComponent }
+  { path: 'webapp-list', component: WebappListComponent },
+  { path: '', redirectTo: '/webapp-list', pathMatch: 'full' },
 ];
 
 @NgModule({
