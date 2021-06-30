@@ -12,6 +12,7 @@ import { MyPageEditComponent } from './my-page-edit/my-page-edit.component';
 import { WebappEditComponent } from './webapp-edit/webapp-edit.component';
 import { WebappShowComponent } from './webapp-show/webapp-show.component';
 import { CommentComponent } from './comment/comment.component';
+import { WebappListComponent } from './webapp-list/webapp-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CommentComponent } from './comment/comment.component';
     MyPageEditComponent,
     WebappEditComponent,
     WebappShowComponent,
-    CommentComponent
+    CommentComponent,
+    WebappListComponent
   ],
   imports: [
     BrowserModule,
