@@ -1,0 +1,11 @@
+<div class="webapp-list">
+  <li *ngFor="let webapp of webapp_s" class="webapp">
+    <nav>
+      <a routerLink="/webapp-show"><img src="../../image0.jpeg" alt="画像が表示されん"></a>
+    </nav>
+      <nav class="titles">
+        <a routerLink="/webapp-show"><li>{{webapp.app_name}}</li></a>
+        <a routerLink="/webapp-show"><li>{{webapp.nickname}}</li></a>
+      </nav>
+  </li>
+</div>
