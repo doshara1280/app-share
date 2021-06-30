@@ -1,0 +1,26 @@
+.webapp-list {
+  display: flex;
+  justify-content: space-around;
+  /* display: inline-block; */
+}
+
+li {
+  list-style: none;
+}
+
+.webapp {
+  width: 200px;
+  height: 200px;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titles {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
